@@ -1,0 +1,42 @@
+ {
+ "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+ "contentVersion": "1.0.0.0",
+"parameters": { 
+    "rg_name":{
+        "value": "vivek-vmrg"
+    },
+    "location": {
+        "value": "east us"
+    },
+    "subscriptionId": {
+        "value": "0b9c4dfd-d9ca-477a-b279-897de40f2d08"
+    },
+    "nsgname": {
+        "value": "vm-nsg1"
+    },
+    "vnetname": {
+        "value": "vm-vnet"
+    },
+    "subnetname": {
+        "value": "vm-subnet"
+    },
+    "nicname": {
+        "value": "vm-nic"
+    },
+    "ipconfigNamE": {
+        "value": "vm-ipconfig"
+    },
+    "vmname": {
+        "value": "vivek-vm"
+    },
+    "username": {
+        "value": "vivekbhimnath"
+    },
+    "password": {
+        "value": "vivekvm"
+    },
+    "computerName": {
+        "value": "Cp1"
+    }
+}
+}
