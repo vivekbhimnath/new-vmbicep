@@ -28,7 +28,7 @@ module rg './resource_grp.bicep' ={
 module nsg 'nsg.bicep'={
   scope: resourceGroup(rg_name)
   name: 'nsg_deploy'
-#disable-next-line explicit-values-for-loc-params
+//disable-next-line explicit-values-for-loc-params
   params:{
     nsgname: nsgname
     location:location
