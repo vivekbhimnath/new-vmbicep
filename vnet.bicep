@@ -24,16 +24,13 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-08-01'={
 
 resource subnet 'Microsoft.Network/virtualNetworks/subnets@2021-08-01'={
   name:subnetname
-  //parent:vnet
+  parent:vnet
   properties:{
     addressPrefix: '10.0.0.0/24'
     networkSecurityGroup:{
       id: nsg.id
     }
   }
-  dependsOn:[
-    vnet
-  ]
 }
 
 output subnetid string = subnet.id
